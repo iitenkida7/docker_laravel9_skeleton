@@ -1,7 +1,7 @@
 #!/bin/bash -ue
 
 CURRENT=$(pwd)
-INSTALL_DIR=${1:-${CURRENT}}
+INSTALL_DIR=${1:-${CURRENT}/project}
 
 if [ ! -d "${INSTALL_DIR}" ]; then
   mkdir -p "${INSTALL_DIR}"
