@@ -10,8 +10,8 @@
 /bin/bash -ec "$(curl -fsSL https://raw.githubusercontent.com/iitenkida7/docker_laravel9_skeleton/main/install.sh)"
 ```
 
-* ※ ブラウザでSSL証明書Errorがでてアクセスできない場合は、以下のコマンドを実行 （パスは適宜変えてください。）
+* ブラウザでSSL証明書エラーでアクセスできない場合は、以下のコマンドを実行 （パスは適宜変更）
 
 ```
-sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain project/nginx/ssl/server.crt
+sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain project/docker/nginx/ssl/server.crt
 ```
