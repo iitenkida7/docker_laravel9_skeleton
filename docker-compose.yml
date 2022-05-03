@@ -27,8 +27,6 @@ services:
 
   db:
     image: mysql:8
-    ports:
-      - "4306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: database
@@ -38,7 +36,6 @@ services:
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --default-authentication-plugin=mysql_native_password
     volumes:
       - ./docker/db/data:/var/lib/mysql:cached
-    restart: always
 
   node:
     image: node:16
