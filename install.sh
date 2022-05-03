@@ -23,7 +23,8 @@ openssl req -x509 -sha256 -nodes -days 3650 -newkey rsa:2048 -subj /CN=localhost
 docker-compose build #--pull --no-cache
 
 #Install laravel
-docker-compose run --rm laravel composer create-project laravel/laravel
+
+docker-compose run --rm laravel bash -c "cd .. && composer create-project laravel/laravel"
 mv laravel laravel_ && mv laravel_/laravel . && rmdir laravel_
 docker-compose up -d
 

@@ -7,5 +7,5 @@
 * 今の所 Macを 想定。
 
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/iitenkida7/docker_laravel9_skeleton/main/install.sh)"
+/bin/bash -ec "$(curl -fsSL https://raw.githubusercontent.com/iitenkida7/docker_laravel9_skeleton/main/install.sh)"
 ```
