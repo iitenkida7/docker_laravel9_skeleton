@@ -28,7 +28,7 @@ mv laravel laravel_ && mv laravel_/laravel .
 docker-compose up -d
 
 #Clean
-rm -rf .git install.sh laravel_
+rm -rf .git install.sh laravel_ || true
 
 echo "Let's access!"
 echo "https://localhost/"
